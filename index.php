@@ -2,6 +2,8 @@
   <head>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="tweetLinkIt.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js"></script>
   </head>
   <body>
 

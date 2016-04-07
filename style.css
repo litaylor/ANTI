@@ -1,3 +1,11 @@
 body {
-  background-color: #ccc;
+  color: red;
+}
+
+.alltweets{
+  width: 400px;
+}
+
+.alltweets img{
+  width:100%;
 }
