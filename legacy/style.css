@@ -1,0 +1,48 @@
+body {
+  background-color:#cfcec5;
+  color:#fdfaf1;
+}
+
+.alltweets{
+  /*width: 400px;*/
+  /*float:left;*/
+  height:100%;
+  overflow-y:scroll;
+}
+
+.alltweets img{
+  width:100%;
+}
+
+.allig, .news {
+  /*width:400px;*/
+  /*float:right;*/
+  height:100%;
+  overflow-y:scroll;
+}
+
+.tweet, .igpic, .newsItem{
+  margin-bottom:20px;
+  width:100%;
+  background-color: #fdfaf1;
+  color: #000;
+}
+
+.header {
+  max-width:600px;
+  margin: 20px auto;
+  display:block;
+}
+
+@font-face {
+  font-family: legacy;
+  src: url('legacy/LEGSFOB.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gm-style-iw span{
+  color:#434343;
+  font-family:legacy;
+  font-size: 20px;
+}

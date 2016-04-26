@@ -1,0 +1,83 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<script>
+
+var tour = [
+  'Jacksonville, Fl',
+  'tampa, fl',
+  'miami, fl',
+  'nashville, tn',
+  'cincinnati, oh',
+  'charlotte, nc',
+  'washington, dc',
+  'buffalo, ny',
+  'auburn hills, mi',
+  'hartford, ct',
+  'brooklyn, ny',
+  'brooklin, ny',
+  'newark, nj',
+  'philadelphia, pa',
+  'quebec city',
+  'montreal',
+  'baltimore, md',
+  'boston, ma',
+  'toronto',
+  'toronto',
+  'chicago, il',
+  'winnipeg',
+  'edmonton',
+  'calgary',
+  'vancouver',
+  'seattle, wa',
+  'salt lake city, ut',
+  'las vegas, nv',
+  'phoenix,az',
+  'los angeles,ca',
+  'san jose',
+  'oakland,ca',
+  'san diego,ca',
+  'dallas,tx',
+  'austin,tx',
+  'houston,tx',
+  'new orleans,la',
+  'atlanta,ga'
+];
+
+  var j=tour.length;
+
+  // alert(tour[0]);
+  for (i=0;i<j;i++){
+  var gLocation=tour[i];
+
+  var geoUrl = "https://maps.googleapis.com/maps/api/geocode/json?address="+gLocation+"&key=AIzaSyB61VEN2M3LtxZj9YFqtGE8G0sDtPTtcxw";
+   //THIS IS BEING WEIRD
+  getIt(gLocation);
+}
+
+  function getIt(gLocation){
+    $.ajax({
+      type: "GET",
+      dataType: "json",
+      cache: false,
+      url: geoUrl,
+      success: parseData
+    });
+  }
+
+  function parseData(json){
+    console.log(json);
+    document.write(json.results[0].geometry.location.lat+", "+json.results[0].geometry.location.lng+"<br/>");
+  }
+
+
+</script>
+
+
+</body>
+</html

@@ -1,11 +1,283 @@
 body {
-  color: red;
+  background-color:#cfcec5;
+  color:#fdfaf1;
+  overflow-x: hidden;
 }
 
-.alltweets{
-  width: 400px;
+.banner{
+  height:33%;
+  padding-top:20px;
+  padding-bottom: 20px;
 }
 
 .alltweets img{
+  width: 100%;
+}
+
+.tweet, .newsItem{
+  margin-bottom:20px;
   width:100%;
+  background-color: #fdfaf1;
+  color: #000;
+  display: block;
+}
+
+.tweet{
+  width:90%;
+  background-color: #fdfaf1;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*padding:20px;*/
+  border: thin solid #e0e0e0;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.twContent {
+  padding: 15px;
+}
+
+.username {
+  padding-bottom: 10px;
+}
+.username span{
+  font-weight: 900;
+}
+
+.twContent img.avi{
+  width: 36px;
+  height: 36px;
+  float: left;
+  padding-right: 5px;
+}
+
+.newsItem{
+  overflow: hidden;
+}
+
+.newsItem a:link,.newsItem a:hover,.newsItem a:active,.newsItem a:visited{
+  color: #434343;
+}
+
+.newsItem a:hover{
+  text-decoration: none;
+}
+
+.newsItem img{
+  width: 100%;
+  top:0px;
+}
+
+.newsImg{
+  float:left;
+  width: 30%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.newsItem h2 {
+  text-transform: none;
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
+.newsText{
+  display: block;
+}
+
+.igpic {
+  width: 100%;
+  display: block;
+  background-color: #fdfaf1;
+  padding: 15px;
+  color: #434343;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.igmedia{
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.igAvi {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.igpic span {
+  font-weight: 900;
+}
+
+.header {
+  max-width:600px;
+  margin: 20px auto;
+  display:block;
+}
+
+@font-face {
+  font-family: legacy;
+  src: url('legacy/LEGSFOW.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gm-style-iw {
+  text-align: center;
+  /*background-color:#cfcec5;*/
+  color:#434343;
+  font-family:legacy;
+  text-transform: lowercase;
+}
+
+.gm-style-iw span{
+  font-size:30px;
+}
+
+span.poLoc {
+  text-transform: uppercase;
+}
+
+.section h1{
+  text-transform: lowercase;
+  font-family: legacy;
+  text-decoration: none;
+}
+
+#map {
+  height:50%;
+}
+
+.back{
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  display: none;
+  background-color: #cfcec5;
+  height: 9%;
+  font-family: legacy;
+  text-align: center;
+  cursor: pointer;
+}
+
+.reax {
+  background-color: #cfcec5;
+  height: 17%;
+  font-family: legacy;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  color: #CB2029;
+  text-decoration: none;
+}
+.reax2 {
+  background-color: #cfcec5;
+  height: 17%;
+  font-family: legacy;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  padding-top: 10px;
+}
+
+.reaxframe{
+  border: thin solid #fdfaf1;
+}
+
+#footer{
+  width: 100%;
+  background-color: #cfcec5;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+  color: #434343;
+  padding:20px;
+  height:10%;
+  text-align: center;
+}
+
+@media (min-width:992px) {
+  body{
+    overflow-y:hidden;
+  }
+  .section {
+    height: 70%;
+    overflow-y: scroll;
+  }
+  .header{
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #content,#alltweets,#allig {
+    /*height:100%;*/
+  }
+}
+
+
+@media (max-width:991px) {
+  .tweet{
+    background-color: #ffffff;
+  }
+  #footer{
+    display: none;
+    background-color: #434343;
+    color:
+  }
+  .reax,.reax2{
+    display: none;
+  }
+  body{
+
+  }
+
+  .banner{
+    height:20%;
+  }
+
+  .header{
+    max-height:100%;
+    margin-top:0;
+    margin-bottom: 0;
+  }
+  .expandable{
+    display:none;
+    height:100%;
+    padding-bottom: 150px;
+    overflow-y: scroll;
+  }
+  #bottom{
+    position:absolute;
+    top:80%;
+    bottom:0px;
+    left:0px;
+    right:0px;
+  }
+  .section{
+    background-color: #fdfaf1;
+    height:33%;
+    cursor: pointer;
+  }
+  .section h1{
+    text-align: center;
+    color: #434343;
+    font-size: 50px;
+  }
+  #maprow{
+    position:absolute;
+    top:20%;
+    height:60%;
+    left:0px;
+    right:0px;
+  }
+  #map {
+    height:100%;
+  }
+
+
 }
